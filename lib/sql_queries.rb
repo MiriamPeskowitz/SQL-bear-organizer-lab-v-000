@@ -1,3 +1,5 @@
+require 'pry'
+
 def selects_all_female_bears_return_name_and_age
   "SELECT bears.name, bears.age FROM BEARS WHERE bears.gender = 'F'"
 end
@@ -26,6 +28,6 @@ def counts_number_of_bears_with_goofy_temperaments
   "SELECT bears.color FROM bears GROUP BY temperament='goofy';"
 end
 
-# def selects_bear_that_killed_Tim
-#   "SELECT bears.name FROM bears ORDER BY temperament= 'aggressive'"
-# end
+def selects_bear_that_killed_Tim
+  "SELECT bears.name FROM bears ORDER BY temperament= 'aggressive'"
+end
