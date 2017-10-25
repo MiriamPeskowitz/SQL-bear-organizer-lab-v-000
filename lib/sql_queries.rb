@@ -11,21 +11,21 @@ def selects_all_bears_names_and_ages_that_are_alive_and_order_youngest_to_oldest
 end
 
 def selects_oldest_bear_and_returns_name_and_age
-  "SELECY bears.name, bears.age ORDER BY DESC LIMIT 1;"
+  "SELECY bears.name, bears.age ORDER BY bears.age DESC LIMIT 1;"
 end
 
 def select_youngest_bear_and_returns_name_and_age
-  "Write your SQL query here"
+  "SELECT bears.name, bears.age ORDER BY bears.age ASC LIMIT 1;"
 end
 
 def selects_most_prominent_color_and_returns_with_count
-  "Write your SQL query here"
+  "SELECT bears.color GROUP BY bears.color ORDER BY bears.color; "
 end
 
 def counts_number_of_bears_with_goofy_temperaments
-  "Write your SQL query here"
+  "SELECT bears.color GROUP BY temperament="goofy";"
 end
 
 def selects_bear_that_killed_Tim
-  "Write your SQL query here"
+  "SELECT bears.age WHERE temperament = "aggressive";"
 end
