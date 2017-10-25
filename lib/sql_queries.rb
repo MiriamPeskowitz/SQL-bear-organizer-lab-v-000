@@ -22,7 +22,7 @@ end
 
 def selects_most_prominent_color_and_returns_with_count
   # "SELECT bears.color FROM bears ORDER BY bears.color SUM bears.color;"
-  binding.pry
+
   "SELECT bears.color, COUNT(bears.color) FROM bears GROUP BY bears.color ORDER BY COUNT(bears.color) DESC 1"
 end
 
